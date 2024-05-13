@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+.movieCardWrapper {
+    height: 15rem;
+    width: 100%;
+    position: absolute;
+    border-radius: 0.5rem;
+    &:hover {
+        cursor: pointer;
+    }
+    &.greenCard {
+        background-color: green;
+        opacity: 0;
+        &:hover {
+            transition: .3s;
+            opacity: .2;
+        }
+    }
+    &.redCard {
+        background-color: red;
+        opacity: 0;
+        &:hover {
+            transition: .3s;
+            opacity: .2;
+        }
+    }
+}
+
+.movieCard {
+    position: relative;
+    background-color: #191919;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    width: 180px;
+    height: 350px;
+    text-align: center;
+    padding-bottom: 1rem;
+    margin: 5px;
+
+    .movieHeader {
+        text-align: center;
+        margin: auto 10px;
+        font-family: "Poetsen One", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        &:hover {
+            text-decoration: underline;
+            color: rgb(146, 146, 146);
+            transition: .3s;
+        }
+    };
+
+    .moviePoster {
+        width: 100%;
+        border-radius: 0.5rem 0.5rem 0 0;
+        height: 15rem;
+        margin-bottom: 0.75rem;
+    }
+}
