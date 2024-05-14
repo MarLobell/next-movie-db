@@ -3,6 +3,10 @@
 .savedMoviesSection {
     width: 47.5%;
 
+    @media (max-width: 700px) {
+        width: 100%;
+    }
+
     h2.savedMoviesHeader {
         text-align: center;
         margin-bottom: 90px;
